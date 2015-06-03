@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="quoteBook">
+<head>
+  <title>The bird 1.4</title>
+</head>
+<body ng-controller="myController">
+  <h1>{{theBird}}</h1>
+
+  <div ng-repeat="bird in birdArray">
+    {{bird.commonName}}, {{bird.family}}
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-cookies.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controller.js"></script>
+</body>
+</html>
